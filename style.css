@@ -1,0 +1,171 @@
+body{
+  margin: 0 auto;
+	padding: 0;
+	background-color: whitesmoke;
+	align-items: center;
+}
+
+/* Encabezado */
+header{
+	position: sticky;
+	top: 0;
+	background-color: #d8d6d6;
+	width: 100%;
+	height: 10vh;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+img{
+	width: 100%;
+}
+
+.Logo{
+	width: 25%;
+}
+
+.User{
+	width: 3%;
+	margin: 0 auto;
+	margin-right: 1vh;
+}
+
+.Carrito{
+	width: 3%;
+	margin: 0 auto;
+	margin-right: 3vh;
+	margin-left: 2vh;
+}
+
+/* Productos */
+.TodosLosProductos{	
+	background-color: rgb(149, 193, 197);
+	margin: 0 auto;
+	margin-top: 2vh;
+	margin-bottom: 2vh;
+	border-radius: 2%;
+	width: 80%;
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+}
+
+.Producto{
+	background-color: white;
+	margin: 2vh;
+}
+
+h3{
+	align-items: center;
+	margin: 0 auto;
+	margin-top: 1%;
+	color: black;
+}
+
+a{
+	text-decoration: none;
+}
+
+.TodosLosProductos .Producto input.Boton{
+	border: none;
+	padding: 10px;
+	width: 60%;
+	font-weight: bolder;
+	display: block;
+	border-radius: 5px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.TodosLosProductos .Producto input.Boton{
+	background-color: rgb(55, 105, 192);
+  color: white;
+}
+
+.TodosLosProductos .Producto input.Boton:hover{
+	background-color: green;
+  color: rgb(255, 255, 255);
+}
+
+/* Pie de pagina */
+footer{
+	background-color: #d8d6d6;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+h4{
+	border: 0;
+	margin: 0;
+}
+
+@media  screen and (max-width: 1080px) {
+	.TodosLosProductos{
+		width: 90%;
+	}
+
+	.TodosLosProductos .Producto input.Boton{
+		width: 90%;
+	}
+	
+}
+
+@media  screen and (max-width: 960px) {
+	.TodosLosProductos{		
+		width: 90%;
+		grid-template-columns: 33% 33% 33%;
+	}
+
+	.TodosLosProductos .Producto input.Boton{
+		width: 80%;
+	}
+	
+}
+
+@media  screen and (max-width: 770px) {
+	.Logo{
+		width: 30%;
+	}
+	
+	.User{
+		width: 5%;
+	}
+	
+	.Carrito{
+		width: 5%;
+	}
+	.TodosLosProductos{		
+		width: 90%;
+		grid-template-columns: 50% 50%;
+	}
+
+	.TodosLosProductos .Producto input.Boton{
+		width: 80%;
+	}
+	
+}
+
+@media  screen and (max-width: 550px) {
+	.Logo{
+		width: 40%;
+	}
+	
+	.User{
+		width: 8%;
+	}
+	
+	.Carrito{
+		width: 8%;
+	}
+	.TodosLosProductos{		
+		width: 90%;
+		grid-template-columns: 100%
+	}
+
+	.TodosLosProductos .Producto input.Boton{
+		width: 80%;
+	}
+	
+}
